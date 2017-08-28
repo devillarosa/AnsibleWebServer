@@ -1,0 +1,12 @@
+---
+# These tasks install and start httpd
+
+- name: Stop httpd 
+  service: name=httpd enabled=no 
+
+- name: stop httpd on during reboot
+  service: name=httpd state=stopped
+
+- name: Uninstall http
+  yum: name=httpd state=removed
+
