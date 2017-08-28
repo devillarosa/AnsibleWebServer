@@ -1,0 +1,4 @@
+
+# This task copies index template to template
+- name: Copy index.html template to destination template
+  template: src=index.html dest=/var/www/html

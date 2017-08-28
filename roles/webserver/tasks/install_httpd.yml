@@ -1,0 +1,12 @@
+---
+# These tasks install and start httpd
+
+- name: Install http and php etc
+  yum: name=httpd state=present
+
+- name: Start httpd 
+  service: name=httpd enabled=yes 
+
+- name: httpd on during reboot
+  service: name=httpd state=started
+
