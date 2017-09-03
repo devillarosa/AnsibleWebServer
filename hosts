@@ -1,1 +1,6 @@
-52.53.151.97
+[local]
+localhost
+
+[webserver]
+54.153.15.229
+
